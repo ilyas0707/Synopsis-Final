@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="./styles/media.css">
     <title>Synopsis</title>
 </head>
+
 <body>
 
     <div class="scene">
@@ -18,37 +20,25 @@
             </div>
             <nav class="scene_nav">
                 <ul>
-                    <li class="scene_list">
+                    <li class="scene_changed">
                         <a href="#">
                             <img src="./assets/icons/dashboard.png" alt="dashboard">
                             Dashboard
                         </a>
                     </li>
-                    <li class="scene_list">
+                    <li class="scene_changed">
                         <a href="#">
                             <img src="./assets/icons/trips.png" alt="trips">
                             Trips
                         </a>
                     </li>
-                    <li class="scene_list">
+                    <li class="scene_changed">
                         <a href="#">
                             <img src="./assets/icons/history.png" alt="history">
                             History
                         </a>
                     </li>
-                    <li class="scene_list">
-                        <a href="#">
-                            <img src="./assets/icons/expenses.png" alt="expenses">
-                            Expenses
-                        </a>
-                    </li>
-                    <li class="scene_list">
-                        <a href="#">
-                            <img src="./assets/icons/invoices.png" alt="invoices">
-                            Invoices
-                        </a>
-                    </li>
-                    <li class="scene_list">
+                    <li class="scene_changed">
                         <a href="#">
                             <img src="./assets/icons/travel_data.png" alt="travel_data">
                             Travel Data
@@ -99,236 +89,466 @@
                             New Request
                         </button>
                         <div class="header_profile">
-                            <button class="header_notification"><img src="./assets/icons/notification.png" alt="notification"></button>
-                            <button class="header_fullname">Hello,<span class="header_name">George</span> <span class="header_arrow"></span></button>
+                            <button class="header_notification"><img src="./assets/icons/notification.png"
+                                    alt="notification"></button>
+                            <button class="header_fullname">Hello,<span class="header_name">George</span> <span
+                                    class="header_arrow"></span></button>
                             <button class="header_avatar"><img src="./assets/icons/avatar.png" alt="avatar"></button>
                         </div>
                     </div>
                 </div>
             </header>
-        
-            <div class="main">
+
+            <div class="trip">
                 <div class="container">
-                    <h2 class="main_heading">Expenses</h2>
-                    <p class="main_text">On this page you can see & add your trip’s expenses</p>
-        
-                    <div class="main_block">
-                        <div class="main_topline">
-                            <div>
-                                <p class="main_count">In action:<span>120</span></p>
-                                <div class="main_filter">
-                                    <input type="radio" name="filter" id="filter">
-                                    <p>Show only closed expenses</p>
-                                </div>
+                    <div class="trip_topline">
+                        <div class="trip_heading">
+                            <h2>My Trip</h2>
+                            <p>trips > offers > request № <span>w623Ln9QO</span></p>
+                        </div>
+                        <div class="trip_call">
+                            <p>Contact your travel advisor</p>
+                            <button><img src="./assets/icons/call.png" alt="call"></button>
+                            <button><img src="./assets/icons/video.png" alt="video"></button>
+                        </div>
+                    </div>
+                    <div class="trip_img">
+                        <div class="img_top">
+                            <div class="img_heading">
+                                <h3>Los Angeles LAX</h3>
+                                <p>29.06.2021 <span>10:50</span></p>
                             </div>
-                            <div>
-                                <button class="main_button">Add Expense</button>
-                                <div class="main_search">
-                                    <input type="text" placeholder="Search BY CODE">
+                            <div class="img_tablo">
+                                <button><img src="./assets/icons/calendar2.png" alt="calendar2"></button>
+                                <div class="img_time">
+                                    <div class="img_head">
+                                        <p>Days</p>
+                                        <p>Hours</p>
+                                        <p>Mins</p>
+                                        <p>Secs</p>
+                                    </div>
+                                    <p>30 : 4 : 20 : 20</p>
                                 </div>
                             </div>
                         </div>
-        
-                        <div class="main_grid">
-                            <div class="main_title">
-                                <h3>Request code</h3>
-                                <h3>Trip name</h3>
-                                <h3>Trip date <span><img src="./assets/icons/arrow_left.png" alt="arrow_left"></span></h3>
-                                <h3>Budget</h3>
-                                <h3>Remaining amount</h3>
-                            </div>
-                            <div class="main_item">
-                                <p class="main_code">WF1234321</p>
-                                <p class="main_name">Los Angeles</p>
-                                <p class="main_date">2 Jan 2020</p>
-                                <p class="main_budget">
-                                    <select name="currency" id="currency">
-                                        <option value="EUR">EUR</option>
-                                    </select>
-                                    <span>3.450</span>
+                        <div style="text-align: right;">
+                            <button class="img_button">
+                                <img src="./assets/icons/download.png" alt="download">
+                                TRAVEL DOCS
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="trip_detail">
+                        <h2 class="accordion">
+                            Destination Details
+                            <button><img src="./assets/icons/arrow_blue.png" alt="arrow_blue"></button>
+                        </h2>
+                        <div class="detail_block" style="display: none;">
+                            <div class="detail_item">
+                                <p class="detail_title">
+                                    <img src="./assets/icons/location.png" alt="location">
+                                    Location
                                 </p>
-                                <div class="main_amount">
-                                    <p>
-                                        € 540.00
-                                        <span>- 2.910,00</span>
-                                    </p>
+                                <h3 class="detail_heading">Los Angeles LAX</h3>
+                                <p class="detail_label">Unites States</p>
+                            </div>
+                            <div class="detail_item">
+                                <p class="detail_title">
+                                    <img src="./assets/icons/time.png" alt="time">
+                                    Time/General
+                                </p>
+                                <h3 class="detail_heading">
+                                    04:50am
+                                    <span style="color: #4e2df1;">PDT</span>
+                                </h3>
+                                <p class="detail_label">Monday 25th August 2020</p>
+                            </div>
+                            <div class="detail_item">
+                                <p class="detail_title">
+                                    <img src="./assets/icons/weather.png" alt="weather">
+                                    Weather
+                                </p>
+                                <h3 class="detail_heading">
+                                    23 oC / 72 oF
+                                    <span style="font-size: 10px; color: #a8a4bd;">Humidity: 84%</span>
+                                </h3>
+                                <p class="detail_label">Mostly sunny</p>
+                            </div>
+                            <div class="detail_item">
+                                <p class="detail_title">
+                                    <img src="./assets/icons/location.png" alt="location">
+                                    Health Requirements
+                                </p>
+                                <h3 class="detail_heading">Travel advisory</h3>
+                                <p class="detail_label">Athens ATH</p>
+                                <a href="#">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="trip_list">
+                        <h2 class="accordion">
+                            Traveler List
+                            <button><img src="./assets/icons/arrow_blue.png" alt="arrow_blue"></button>
+                        </h2>
+
+                        <div class="list_grid" style="display: none;">
+                                                                         
+                            <div class="list_title">
+                                <h3>Surname</h3>
+                                <h3>First Name</h3>
+                                <h3>Middle Name</h3>
+                                <h3>Date of Birth</h3>
+                                <h3>Passport</h3>
+                                <h3>Exp. Date</h3>
+                            </div>
+                            <div class="list_item">
+                                <p>Papadopoulos</p>
+                                <p>Ioannis</p>
+                                <p>-</p>
+                                <p>12.04.1983</p>
+                                <p>A12121213</p>
+                                <p>04.09.2020</p>
+                                <p>
                                     <button>
-                                        <span>+</span>
-                                        Add New
+                                        <img src="./assets/icons/view.png" alt="view">
                                     </button>
-                                    <a href="./inner.html" target="_blank">
-                                        View all
-                                    </a>
+                                </p>
+                            </div>
+                            <div class="list_item">
+                                <p>Papadopoulos</p>
+                                <p>Ioannis</p>
+                                <p>-</p>
+                                <p>12.04.1983</p>
+                                <p>A12121213</p>
+                                <p>04.09.2020</p>
+                                <p>
+                                    <button>
+                                        <img src="./assets/icons/view.png" alt="view">
+                                    </button>
+                                </p>
+                            </div>
+                            <div class="list_item">
+                                <p>Papadopoulos</p>
+                                <p>Ioannis</p>
+                                <p>-</p>
+                                <p>12.04.1983</p>
+                                <p>A12121213</p>
+                                <p>04.09.2020</p>
+                                <p>
+                                    <button>
+                                        <img src="./assets/icons/view.png" alt="view">
+                                    </button>
+                                </p>
+                            </div>
+                            <div class="list_item">
+                                <p>Papadopoulos</p>
+                                <p>Ioannis</p>
+                                <p>-</p>
+                                <p>12.04.1983</p>
+                                <p>A12121213</p>
+                                <p>04.09.2020</p>
+                                <p>
+                                    <button>
+                                        <img src="./assets/icons/view.png" alt="view">
+                                    </button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="trip_flight">
+                        <h2 class="accordion">
+                            Flight Details
+                            <button><img src="./assets/icons/arrow_blue.png" alt="arrow_blue"></button>
+                        </h2>
+
+                        <div style="display: none;">
+                            <div class="flight_topline">
+                                <div class="topline_logo">
+                                    <img src="./assets/icons/air1.png" alt="air1">
+                                    <p>AF 0295</p>
+                                </div>
+                                <div class="topline_info">
+                                    <div class="topline_item">
+                                        <p>28 June</p>
+                                        <h3>21:50</h3>
+                                        <p>Athens <span>ATH</span></p>
+                                    </div>
+                                    <div class="topline_item">
+                                        <p style="margin-bottom: 10px;">16 hrs, 45mins</p>
+                                        <img src="./assets/icons/plane.png" alt="plane">
+                                    </div>
+                                    <div class="topline_item">
+                                        <p>28 June</p>
+                                        <h3>21:50</h3>
+                                        <p>Athens <span>ATH</span></p>
+                                    </div>
+                                </div>
+                                <div class="topline_crit">
+                                    <div class="crit_weight">
+                                        <img src="./assets/icons/luggage.png" alt="luggage">
+                                        <p>
+                                            <span>AF 3 PC - 23KG</span>
+                                            <span>AC 1 PC - 40KG</span>
+                                        </p>
+                                    </div>
+                                    <div class="crit_ticket">
+                                        <img src="./assets/icons/ticket.png" alt="ticket">
+                                        <a href="#">View Fare Rules</a>
+                                    </div>
+                                </div>
+                                <div class="topline_price">
+                                    <h3>€250.80</h3>
+                                    <p>Marine economy</p>
                                 </div>
                             </div>
-                            <div class="main_item">
-                                <p class="main_code">WF1234321</p>
-                                <p class="main_name">Los Angeles</p>
-                                <p class="main_date">2 Jan 2020</p>
-                                <p class="main_budget">
-                                    <select name="currency" id="currency">
-                                        <option value="EUR">EUR</option>
-                                    </select>
-                                    <span>3.450</span>
-                                </p>
-                                <div class="main_amount">
-                                    <p>
-                                        € 540.00
-                                        <span>- 2.910,00</span>
-                                    </p>
-                                    <button>
-                                        <span>+</span>
-                                        Add New
-                                    </button>
-                                    <a href="./inner.html" target="_blank">
-                                        View all
-                                    </a>
+    
+                            <div class="flight_main">
+                                <h3>
+                                    <img src="./assets/icons/plane2.png" alt="plane2">
+                                    <span>Outbund Flight  on  Wed, 28 June</span>
+                                </h3>
+                                <div class="flight_item" style="margin-bottom: 90px;">
+                                    <div class="flight_title">
+                                        <img src="./assets/icons/air1.png" alt="air1">
+                                        <p>AF 0295</p>
+                                        <p>Air France</p>
+                                    </div>
+                                    <div class="flight_info">
+                                        <div class="flight_time">
+                                            <div class="flight_dots">
+                                                <span class="dots_start"></span>
+                                                <span class="dots_center"></span>
+                                                <span class="dots_center"></span>
+                                                <span class="dots_center"></span>
+                                                <span class="dots_center"></span>
+                                                <span class="dots_start"></span>
+                                            </div>
+                                            <div class="time_info">
+                                                <h3>21:50  •  EL Venizelos Airport, Athens (ATH)</h3>
+                                                <p>Travel Time:  3hours, 15mins</p>
+                                                <h3>00:40  •  Paris Charles de Gaulle International Airport CDG <span>+1</span></h3>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="main_item">
-                                <p class="main_code">WF1234321</p>
-                                <p class="main_name">Los Angeles</p>
-                                <p class="main_date">2 Jan 2020</p>
-                                <p class="main_budget">
-                                    <select name="currency" id="currency">
-                                        <option value="EUR">EUR</option>
-                                    </select>
-                                    <span>3.450</span>
-                                </p>
-                                <div class="main_amount">
-                                    <p>
-                                        € 540.00
-                                        <span>- 2.910,00</span>
-                                    </p>
-                                    <button>
-                                        <span>+</span>
-                                        Add New
-                                    </button>
-                                    <a href="./inner.html" target="_blank">
-                                        View all
-                                    </a>
+                                <div class="flight_stop">
+                                    <h3><span></span> 1 STOP <p>5 hour 35 minute   Stay   •   Paris (CDG )</p></h3>
+                                    <p class="flight_warning">Overnight Connection <br> Long Connection</p>
                                 </div>
-                            </div>
-                            <div class="main_item">
-                                <p class="main_code">WF1234321</p>
-                                <p class="main_name">Los Angeles</p>
-                                <p class="main_date">2 Jan 2020</p>
-                                <p class="main_budget">
-                                    <select name="currency" id="currency">
-                                        <option value="EUR">EUR</option>
-                                    </select>
-                                    <span>3.450</span>
-                                </p>
-                                <div class="main_amount">
-                                    <p>
-                                        € 540.00
-                                        <span>- 2.910,00</span>
-                                    </p>
-                                    <button>
-                                        <span>+</span>
-                                        Add New
-                                    </button>
-                                    <a href="./inner.html" target="_blank">
-                                        View all
-                                    </a>
+                                <div class="flight_item bb">
+                                    <div class="flight_title">
+                                        <img src="./assets/icons/air1.png" alt="air1">
+                                        <p>AF 0295</p>
+                                        <p>Air France</p>
+                                    </div>
+                                    <div class="flight_info">
+                                        <div class="flight_time">
+                                            <div class="flight_dots">
+                                                <span class="dots_start"></span>
+                                                <span class="dots_center"></span>
+                                                <span class="dots_center"></span>
+                                                <span class="dots_center"></span>
+                                                <span class="dots_center"></span>
+                                                <span class="dots_start"></span>
+                                            </div>
+                                            <div class="time_info">
+                                                <h3>21:50  •  EL Venizelos Airport, Athens (ATH)</h3>
+                                                <p>Travel Time:  3hours, 15mins</p>
+                                                <h3>00:40  •  Paris Charles de Gaulle International Airport CDG <span>+1</span></h3>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="main_item">
-                                <p class="main_code">WF1234321</p>
-                                <p class="main_name">Los Angeles</p>
-                                <p class="main_date">2 Jan 2020</p>
-                                <p class="main_budget">
-                                    <select name="currency" id="currency">
-                                        <option value="EUR">EUR</option>
-                                    </select>
-                                    <span>3.450</span>
-                                </p>
-                                <div class="main_amount">
-                                    <p>
-                                        € 540.00
-                                        <span>- 2.910,00</span>
-                                    </p>
-                                    <button>
-                                        <span>+</span>
-                                        Add New
-                                    </button>
-                                    <a href="./inner.html" target="_blank">
-                                        View all
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="main_item">
-                                <p class="main_code">WF1234321</p>
-                                <p class="main_name">Los Angeles</p>
-                                <p class="main_date">2 Jan 2020</p>
-                                <p class="main_budget">
-                                    <select name="currency" id="currency">
-                                        <option value="EUR">EUR</option>
-                                    </select>
-                                    <span>3.450</span>
-                                </p>
-                                <div class="main_amount">
-                                    <p>
-                                        € 540.00
-                                        <span>- 2.910,00</span>
-                                    </p>
-                                    <button>
-                                        <span>+</span>
-                                        Add New
-                                    </button>
-                                    <a href="./inner.html" target="_blank">
-                                        View all
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="main_item">
-                                <p class="main_code">WF1234321</p>
-                                <p class="main_name">Los Angeles</p>
-                                <p class="main_date">2 Jan 2020</p>
-                                <p class="main_budget">
-                                    <select name="currency" id="currency">
-                                        <option value="EUR">EUR</option>
-                                    </select>
-                                    <span>3.450</span>
-                                </p>
-                                <div class="main_amount">
-                                    <p>
-                                        € 540.00
-                                        <span>- 2.910,00</span>
-                                    </p>
-                                    <button>
-                                        <span>+</span>
-                                        Add New
-                                    </button>
-                                    <a href="./inner.html" target="_blank">
-                                        View all
-                                    </a>
+                                <div class="flight_check">
+                                    <p>Check In opens in</p>
+                                    <h3>2<span>d</span> 28<span>h</span> 15<span>m</span></h3>
+                                    <button disabled>Check In Now</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-        
-                    <div class="main_pagination">
-                        <p class="main_view">
-                            view
-                            <select name="view" id="view">
-                                <option value="10">10</option>
-                            </select>
-                            of 35 results
-                        </p>
-                        <div class="main_pages">
-                            <button class="main_prev"><img src="./assets/icons/arrow_left.png" alt="arrow_left"></button>
-                            <button>1</button>
-                            <button>2</button>
-                            <button>...</button>
-                            <button class="main_next"><img src="./assets/icons/arrow_left.png" alt="arrow_left"></button>
+
+                    <div class="trip_flight" style="margin-bottom: 20px;">
+                        <h2 class="accordion">
+                            Hotel Details
+                            <button><img src="./assets/icons/arrow_blue.png" alt="arrow_blue"></button>
+                        </h2>
+                        
+                        <div style="display: none;">
+                            <div class="hotel_block">
+                                <div class="hotel_item">
+                                    <h3 class="hotel_heading">Samoah Luxury Hotel</h3>
+                                    <p class="hotel_stars">4 stars hotel</p>
+                                    <p class="hotel_location">
+                                        <img src="./assets/icons/location2.png" alt="location2">
+                                        Los Angeles, California
+                                    </p>
+                                    <div class="hotel_buttons">
+                                        <p style="margin-right: 30px;">
+                                            <button style="background: transparent;"><img src="./assets/icons/gallery.png" alt="gallery"></button>
+                                            Gallery
+                                        </p>
+                                        <p>
+                                            <button><img src="./assets/icons/directions.png" alt="directions"></button>
+                                            Directions
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="hotel_item">
+                                    <div class="hotel_check" style="margin-bottom: 23px;">
+                                        <p>check in</p>
+                                        <p class="hotel_date">Thu, 29 June</p>
+                                    </div>
+                                    <div class="hotel_check">
+                                        <p>check out</p>
+                                        <p class="hotel_date">Thu, 29 June</p>
+                                    </div>
+                                </div>
+                                <div class="hotel_info">
+                                    <p>Room Type<span>Multiple</span></p>
+                                    <p>Board Type<span>Bed & Breakfast</span></p>
+                                    <p>Canc. Policy<a href="#">View</a></p>
+                                </div>
+                                <div class="hotel_price">
+                                    <p>€2400.00 <span>total</span></p>
+                                </div>
+                            </div>
+                            <div class="hotel_pros">
+                                <p>
+                                    <img src="./assets/icons/restaurant.png" alt="restaurant">
+                                    Restaurant
+                                </p>
+                                <p>
+                                    <img src="./assets/icons/restaurant.png" alt="restaurant">
+                                    Restaurant
+                                </p>
+                                <p>
+                                    <img src="./assets/icons/restaurant.png" alt="restaurant">
+                                    Restaurant
+                                </p>
+                                <p>
+                                    <img src="./assets/icons/restaurant.png" alt="restaurant">
+                                    Restaurant
+                                </p>
+                                <p>
+                                    <img src="./assets/icons/restaurant.png" alt="restaurant">
+                                    Restaurant
+                                </p>
+                                <p>
+                                    <img src="./assets/icons/restaurant.png" alt="restaurant">
+                                    Restaurant
+                                </p>
+                                <p>
+                                    <img src="./assets/icons/restaurant.png" alt="restaurant">
+                                    Restaurant
+                                </p>
+                            </div>
                         </div>
+                    </div>
+
+                    <div class="trip_flight" style="margin-bottom: 20px;">
+                        <h2 class="accordion">
+                            Car Rental Details
+                            <button><img src="./assets/icons/arrow_blue.png" alt="arrow_blue"></button>
+                        </h2>
+
+                        <div style="display: none;">
+                            <div class="car_title">
+                                <div>
+                                    <h3 class="title_heading">Hertz</h3>
+                                    <div class="title_text">
+                                        <p>Toyota Aygo <span>or similar</span></p>
+                                        <p>Group A - MDMR</p>
+                                    </div>
+                                </div>
+                                <p class="title_price">
+                                    €560.00 <span>5 day rental</span>
+                                </p>
+                            </div>
+                            <div class="car_main">
+                                <div class="car_image">
+                                    <img src="./assets/icons/car2.png" alt="car2">
+                                </div>
+                                <div class="car_info">
+                                    <div class="car_item" style="margin-bottom: 25px;">
+                                        <h3>Pick up</h3>
+                                        <div class="car_date">
+                                            <div class="date_item">
+                                                <p>LOCATION</p>
+                                                <span>HERZ AIRPORT SLM</span>
+                                            </div>
+                                            <div class="date_item">
+                                                <p>Date</p>
+                                                <span>29.07.2021</span>
+                                            </div>
+                                            <div class="date_item">
+                                                <p>TIME</p>
+                                                <span>10:45am</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="car_item">
+                                        <h3>Pick up</h3>
+                                        <div class="car_date">
+                                            <div class="date_item">
+                                                <p>LOCATION</p>
+                                                <span>HERZ AIRPORT SLM</span>
+                                            </div>
+                                            <div class="date_item">
+                                                <p>Date</p>
+                                                <span>29.07.2021</span>
+                                            </div>
+                                            <div class="date_item">
+                                                <p>TIME</p>
+                                                <span>10:45am</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="car_extra">
+                                <div class="extra_item">
+                                    <p style="margin-right: 80px;">
+                                        <img src="./assets/icons/petrol.png" alt="petrol">
+                                        petrol
+                                    </p>
+                                    <p>
+                                        <img src="./assets/icons/manual.png" alt="manual">
+                                        manual
+                                    </p>
+                                </div>
+                                <p>
+                                    <span style="margin-bottom: 15px;">
+                                        Canc. Policy
+                                        <a href="#">View</a>
+                                    </span>
+                                    <span>* For detailed information please check your travel docs</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="trip_buttons">
+                        <div class="buttons_item">
+                            <button class="buttons_rebook">REBOOK</button>
+                            <button class="buttons_cancel">CANCEL</button>
+                        </div>
+                        <button class="img_button">
+                            <img src="./assets/icons/download.png" alt="download">
+                            TRAVEL DOCS
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
+    </div>
+
     <script src="./script.js"></script>
 </body>
+
 </html>
