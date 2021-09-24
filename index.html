@@ -14,8 +14,8 @@
 <body>
 
     <div class="scene">
-        <div class="scene_menu">
-            <div class="scene_logo">
+        <div class="scene_menu" id="menu">
+            <div class="scene_logo closed">
                 <a href="#"><img src="./assets/icons/logo.png" alt="logo"></a>
             </div>
             <nav class="scene_nav">
@@ -23,31 +23,31 @@
                     <li class="scene_changed">
                         <a href="#">
                             <img src="./assets/icons/dashboard.png" alt="dashboard">
-                            Dashboard
+                            <span class="closed">Dashboard</span>
                         </a>
                     </li>
                     <li class="scene_changed">
                         <a href="#">
                             <img src="./assets/icons/trips.png" alt="trips">
-                            Trips
+                            <span class="closed">Trips</span>
                         </a>
                     </li>
                     <li class="scene_changed">
                         <a href="#">
                             <img src="./assets/icons/history.png" alt="history">
-                            History
+                            <span class="closed">History</span>
                         </a>
                     </li>
                     <li class="scene_changed">
                         <a href="#">
                             <img src="./assets/icons/travel_data.png" alt="travel_data">
-                            Travel Data
+                            <span class="closed">Travel Data</span>
                         </a>
                     </li>
                 </ul>
             </nav>
 
-            <div class="scene_call">
+            <div class="scene_call closed">
                 <div class="scene_contacts">
                     <h3>
                         <img src="./assets/icons/phone.png" alt="phone">
@@ -69,18 +69,18 @@
 
             <div class="scene_collapse">
                 <label class="scene_switch">
-                    <input type="checkbox">
-                    <span class="scene_slider round"></span>
+                    <input type="checkbox" id="checkbox">
+                    <span class="scene_slider round" id="slider"></span>
                 </label>
-                <p>Collapse Menu</p>
+                <p class="closed">Collapse Menu</p>
             </div>
 
-            <p class="scene_copyright">
+            <p class="scene_copyright closed">
                 © 2020 All Rights Reserved Antaeus Travel Group®
             </p>
         </div>
 
-        <div class="scene_item">
+        <div class="scene_item" id="main">
             <header class="header">
                 <div class="container">
                     <div class="header_block">
@@ -140,11 +140,11 @@
                     </div>
 
                     <div class="trip_detail">
-                        <h2 class="accordion">
+                        <h2 style="display: inline-block;">
                             Destination Details
-                            <button><img src="./assets/icons/arrow_blue.png" alt="arrow_blue"></button>
                         </h2>
-                        <div class="detail_block" style="display: none;">
+                        <button class="accordion" style="float: right;"><img src="./assets/icons/arrow_blue.png" alt="arrow_blue"></button>
+                        <div class="detail_block" style="display: grid;">
                             <div class="detail_item">
                                 <p class="detail_title">
                                     <img src="./assets/icons/location.png" alt="location">
@@ -188,10 +188,10 @@
                     </div>
 
                     <div class="trip_list">
-                        <h2 class="accordion">
+                        <h2 style="display: inline-block;">
                             Traveler List
-                            <button><img src="./assets/icons/arrow_blue.png" alt="arrow_blue"></button>
                         </h2>
+                        <button class="accordion" style="float: right;"><img src="./assets/icons/arrow_blue.png" alt="arrow_blue"></button>
 
                         <div class="list_grid" style="display: none;">
                                                                          
@@ -259,12 +259,12 @@
                     </div>
 
                     <div class="trip_flight">
-                        <h2 class="accordion">
+                        <h2 style="display: inline-block;">
                             Flight Details
-                            <button><img src="./assets/icons/arrow_blue.png" alt="arrow_blue"></button>
                         </h2>
+                        <button class="accordion" style="float: right;"><img src="./assets/icons/arrow_blue.png" alt="arrow_blue"></button>
 
-                        <div style="display: none;">
+                        <div style="display: grid;">
                             <div class="flight_topline">
                                 <div class="topline_logo">
                                     <img src="./assets/icons/air1.png" alt="air1">
@@ -299,8 +299,8 @@
                                         <a href="#">View Fare Rules</a>
                                     </div>
                                 </div>
-                                <div class="topline_price">
-                                    <h3>€250.80</h3>
+                                <div class="topline_price" style="transform: translateY(-10px);">
+                                    <h3 style="font-weight: normal;">€250.80</h3>
                                     <p>Marine economy</p>
                                 </div>
                             </div>
@@ -372,12 +372,12 @@
                     </div>
 
                     <div class="trip_flight" style="margin-bottom: 20px;">
-                        <h2 class="accordion">
+                        <h2 style="display: inline-block;">
                             Hotel Details
-                            <button><img src="./assets/icons/arrow_blue.png" alt="arrow_blue"></button>
                         </h2>
+                        <button class="accordion" style="float: right;"><img src="./assets/icons/arrow_blue.png" alt="arrow_blue"></button>
                         
-                        <div style="display: none;">
+                        <div style="display: grid;">
                             <div class="hotel_block">
                                 <div class="hotel_item">
                                     <h3 class="hotel_heading">Samoah Luxury Hotel</h3>
@@ -450,12 +450,12 @@
                     </div>
 
                     <div class="trip_flight" style="margin-bottom: 20px;">
-                        <h2 class="accordion">
+                        <h2 style="display: inline-block;">
                             Car Rental Details
-                            <button><img src="./assets/icons/arrow_blue.png" alt="arrow_blue"></button>
                         </h2>
+                        <button class="accordion" style="float: right;"><img src="./assets/icons/arrow_blue.png" alt="arrow_blue"></button>
 
-                        <div style="display: none;">
+                        <div style="display: grid;">
                             <div class="car_title">
                                 <div>
                                     <h3 class="title_heading">Hertz</h3>
