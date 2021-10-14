@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/media.css">
@@ -28,13 +29,13 @@
                     </li>
                     <li class="scene_changed">
                         <a href="#">
-                            <img src="./assets/icons/trips.png" alt="trips">
+                            <img style="margin-right: 25px;" src="./assets/icons/trips.png" alt="trips">
                             <span class="closed">Trips</span>
                         </a>
                     </li>
                     <li class="scene_changed">
                         <a href="#">
-                            <img src="./assets/icons/history.png" alt="history">
+                            <img style="margin-right: 27px;" src="./assets/icons/history.png" alt="history">
                             <span class="closed">History</span>
                         </a>
                     </li>
@@ -48,19 +49,19 @@
             </nav>
 
             <div class="scene_call closed">
-                <div class="scene_contacts">
+                <div class="scene_contacts closed">
                     <h3>
                         <img src="./assets/icons/phone.png" alt="phone">
-                        <div class="scene_label">
+                        <div class="scene_label closed">
                             <span>24-7</span>
                             <span>support</span>
                         </div>
                     </h3>
-                    <div class="scene_number">
+                    <div class="scene_number closed">
                         <p>Athens, Gr</p>
                         <a href="tel:+302111042100">+30 211 1042100</a>
                     </div>
-                    <div class="scene_number">
+                    <div class="scene_number closed">
                         <p>Miami, US</p>
                         <a href="tel:+17862387001">+1 786 238 7001</a>
                     </div>
@@ -132,7 +133,7 @@
                             </div>
                         </div>
                         <div style="text-align: right;">
-                            <button class="img_button">
+                            <button class="img_button open_modal">
                                 <img src="./assets/icons/download.png" alt="download">
                                 TRAVEL DOCS
                             </button>
@@ -143,8 +144,9 @@
                         <h2 style="display: inline-block;">
                             Destination Details
                         </h2>
-                        <button class="accordion" style="float: right;"><img src="./assets/icons/arrow_blue.png" alt="arrow_blue"></button>
-                        <div class="detail_block" style="display: grid;">
+                        <button class="accordion" style="float: right;"><img src="./assets/icons/arrow_blue.png"
+                                alt="arrow_blue"></button>
+                        <div class="detail_block list_grid">
                             <div class="detail_item">
                                 <p class="detail_title">
                                     <img src="./assets/icons/location.png" alt="location">
@@ -191,10 +193,11 @@
                         <h2 style="display: inline-block;">
                             Traveler List
                         </h2>
-                        <button class="accordion" style="float: right;"><img src="./assets/icons/arrow_blue.png" alt="arrow_blue"></button>
+                        <button class="accordion" style="float: right;"><img src="./assets/icons/arrow_blue.png"
+                                alt="arrow_blue"></button>
 
-                        <div class="list_grid" style="display: none;">
-                                                                         
+                        <div class="list_grid">
+
                             <div class="list_title">
                                 <h3>Surname</h3>
                                 <h3>First Name</h3>
@@ -262,9 +265,10 @@
                         <h2 style="display: inline-block;">
                             Flight Details
                         </h2>
-                        <button class="accordion" style="float: right;"><img src="./assets/icons/arrow_blue.png" alt="arrow_blue"></button>
+                        <button class="accordion" style="float: right;"><img src="./assets/icons/arrow_blue.png"
+                                alt="arrow_blue"></button>
 
-                        <div style="display: grid;">
+                        <div class="list_grid">
                             <div class="flight_topline">
                                 <div class="topline_logo">
                                     <img src="./assets/icons/air1.png" alt="air1">
@@ -304,11 +308,11 @@
                                     <p>Marine economy</p>
                                 </div>
                             </div>
-    
+
                             <div class="flight_main">
                                 <h3>
                                     <img src="./assets/icons/plane2.png" alt="plane2">
-                                    <span>Outbund Flight  on  Wed, 28 June</span>
+                                    <span>Outbund Flight on Wed, 28 June</span>
                                 </h3>
                                 <div class="flight_item" style="margin-bottom: 90px;">
                                     <div class="flight_title">
@@ -327,15 +331,18 @@
                                                 <span class="dots_start"></span>
                                             </div>
                                             <div class="time_info">
-                                                <h3>21:50  •  EL Venizelos Airport, Athens (ATH)</h3>
-                                                <p>Travel Time:  3hours, 15mins</p>
-                                                <h3>00:40  •  Paris Charles de Gaulle International Airport CDG <span>+1</span></h3>
+                                                <h3>21:50 • EL Venizelos Airport, Athens (ATH)</h3>
+                                                <p>Travel Time: 3hours, 15mins</p>
+                                                <h3>00:40 • Paris Charles de Gaulle International Airport CDG
+                                                    <span>+1</span>
+                                                </h3>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="flight_stop">
-                                    <h3><span></span> 1 STOP <p>5 hour 35 minute   Stay   •   Paris (CDG )</p></h3>
+                                    <h3><span></span> 1 STOP <p>5 hour 35 minute Stay • Paris (CDG )</p>
+                                    </h3>
                                     <p class="flight_warning">Overnight Connection <br> Long Connection</p>
                                 </div>
                                 <div class="flight_item bb">
@@ -355,9 +362,11 @@
                                                 <span class="dots_start"></span>
                                             </div>
                                             <div class="time_info">
-                                                <h3>21:50  •  EL Venizelos Airport, Athens (ATH)</h3>
-                                                <p>Travel Time:  3hours, 15mins</p>
-                                                <h3>00:40  •  Paris Charles de Gaulle International Airport CDG <span>+1</span></h3>
+                                                <h3>21:50 • EL Venizelos Airport, Athens (ATH)</h3>
+                                                <p>Travel Time: 3hours, 15mins</p>
+                                                <h3>00:40 • Paris Charles de Gaulle International Airport CDG
+                                                    <span>+1</span>
+                                                </h3>
                                             </div>
                                         </div>
                                     </div>
@@ -375,9 +384,10 @@
                         <h2 style="display: inline-block;">
                             Hotel Details
                         </h2>
-                        <button class="accordion" style="float: right;"><img src="./assets/icons/arrow_blue.png" alt="arrow_blue"></button>
-                        
-                        <div style="display: grid;">
+                        <button class="accordion" style="float: right;"><img src="./assets/icons/arrow_blue.png"
+                                alt="arrow_blue"></button>
+
+                        <div class="list_grid">
                             <div class="hotel_block">
                                 <div class="hotel_item">
                                     <h3 class="hotel_heading">Samoah Luxury Hotel</h3>
@@ -388,7 +398,8 @@
                                     </p>
                                     <div class="hotel_buttons">
                                         <p style="margin-right: 30px;">
-                                            <button style="background: transparent;"><img src="./assets/icons/gallery.png" alt="gallery"></button>
+                                            <button style="background: transparent;"><img
+                                                    src="./assets/icons/gallery.png" alt="gallery"></button>
                                             Gallery
                                         </p>
                                         <p>
@@ -453,9 +464,10 @@
                         <h2 style="display: inline-block;">
                             Car Rental Details
                         </h2>
-                        <button class="accordion" style="float: right;"><img src="./assets/icons/arrow_blue.png" alt="arrow_blue"></button>
+                        <button class="accordion" style="float: right;"><img src="./assets/icons/arrow_blue.png"
+                                alt="arrow_blue"></button>
 
-                        <div style="display: grid;">
+                        <div class="list_grid">
                             <div class="car_title">
                                 <div>
                                     <h3 class="title_heading">Hertz</h3>
@@ -509,7 +521,7 @@
                                     </div>
                                 </div>
                             </div>
-    
+
                             <div class="car_extra">
                                 <div class="extra_item">
                                     <p style="margin-right: 80px;">
@@ -544,6 +556,61 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="modal_request" id="modal">
+            <div class="request_main">
+                <h3 class="request_title">
+                    <p>
+                        Selected Fare
+                    </p>
+                    <button class="request_cancel close_modal">
+                        <span class="material-icons">close</span>
+                    </button>
+                </h3>
+                <div class="modal_body">
+                    <div class="modal_main">
+                        <h3>
+                            Economy Flex
+                            <img src="./assets/icons/checked.png" alt="checked">
+                        </h3>
+                        <p>
+                            €1,450.80
+                            <span>PER PERSON</span>
+                        </p>
+                        <ul>
+                            <li>
+                                <img src="./assets/icons/cancel.png" alt="cancel">
+                                Partly Refundable
+                            </li>
+                            <li>
+                                <img src="./assets/icons/tick.png" alt="tick">
+                                Cancelation fee: USD 200
+                            </li>
+                            <li>
+                                <img src="./assets/icons/tick.png" alt="tick">
+                                Change fee: USD 50
+                            </li>
+                            <li>
+                                <img src="./assets/icons/tick.png" alt="tick">
+                                Standard seat
+                            </li>
+                        </ul>
+                        <div class="modal_lug">
+                            <p>
+                                <img src="./assets/icons/luggage.png" alt="luggage">
+                                <img src="./assets/icons/luggage.png" alt="luggage">
+                                <img src="./assets/icons/luggage.png" alt="luggage">
+                                AF - 3 PC / 23kg each
+                            </p>
+                            <p>
+                                <img src="./assets/icons/luggage.png" alt="luggage">
+                                AC - 1 PC / 40kg each
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay" id="overlay"></div>
         </div>
     </div>
     </div>
